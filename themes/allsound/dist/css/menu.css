@@ -1,0 +1,89 @@
+/* Navbar */
+
+.menu-ferme {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: right;
+    z-index: 10;
+    height: 14%;
+}
+
+.menu-ouvert {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #FF8008;
+    text-align: left;
+    z-index: 10;
+}
+
+
+/* .menu-ouvert img {
+    display: block;
+} */
+
+.menu-ferme LI {
+    display: inline;
+    font-size: 1.4rem;
+    font-family: Roboto Mono;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+.menu-ferme UL {
+    padding-right: 20px;
+}
+
+#menu-container {
+    z-index: 6;
+}
+
+#menu-container a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#menu-container a:hover {
+    color: #FFCF53;
+}
+
+#menu-container .lien-actif a {
+    color: #FF8008;
+}
+
+#menu-container img {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding-top: 16px;
+    padding-right: 20px;
+    width: 35px;
+}
+
+@media screen and (max-width:800px) {
+    #menu-container img {
+        display: block;
+    }
+    #menu-container span {
+        display: none;
+    }
+    .menu-ferme LI {
+        display: none;
+    }
+    .menu-ouvert LI {
+        display: block;
+        padding-bottom: 30px;
+        font-size: 1.4rem;
+        font-family: Roboto Mono;
+        font-weight: bold;
+        text-transform: uppercase;
+        list-style-type: none;
+    }
+    .menu-ouvert UL {
+        padding-top: 60px;
+    }
+}

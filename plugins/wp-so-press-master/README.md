@@ -1,0 +1,2 @@
+# Plugin wordpress de base
+

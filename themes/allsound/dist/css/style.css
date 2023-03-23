@@ -1,0 +1,113 @@
+  /* Theme Name: Allsound
+Description: Podcast man
+Author: SO PRESS
+Version: 1.0 */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+  	font-family: 'Roboto Mono', monospace !important;
+  }
+
+  html {
+  	margin: 0px
+  }
+
+  body {
+  	font-family: 'Bodoni Moda', serif !important;
+  	width: 100%;
+  }
+
+  .imgLogoH,
+  .imgLogoV {
+  	position: relative;
+  	z-index: 7;
+
+  }
+
+  .imgLogoV {
+  	position: fixed;
+  	transform: rotate(-90deg);
+	  max-width: 437px;
+	  top: 187px;
+	  left: -189px;
+  }
+
+  .imgLogoH {
+  	position: fixed;
+  	width: 18rem;
+  	top: 12px;
+  	left: 12px;
+  	display: none;
+  }
+
+  @media screen and (max-width:800px) {
+  	.imgLogoV {
+  		display: none;
+  	}
+
+  	.imgLogoH {
+  		display: block;
+  	}
+  }
+
+  @media screen and (max-width:365px) {
+  	.imgLogoH {
+  		display: block;
+  		width: 17rem;
+  	}
+  }
+
+  /* PAGINATION */
+
+  .previous-btn,
+  .next-btn {
+  	border: 0;
+  	background-color: transparent;
+  	width: 23px;
+  	margin: 3px 8px 0px 8px;
+  }
+
+  .previous-btn:hover,
+  .next-btn:hover {
+  	cursor: pointer;
+  }
+
+  .page-btn {
+  	border: 0;
+  	background-color: transparent;
+  }
+
+  .page-btn A {
+  	font-family: 'Roboto Mono';
+  	font-size: 18px;
+  	color: #FF8008;
+  	text-decoration: none;
+  	margin: 0px;
+  }
+
+  .page-btn A:hover {}
+
+  .btnContainer {
+  	padding-bottom: 34px;
+  	padding-top: 17px;
+  	display: flex;
+  	flex-direction: row;
+  	align-items: center;
+  	justify-content: center;
+  }
+
+  #page-active {
+  	width: 35px;
+  	height: 35px;
+  	padding: 5px;
+  	border-radius: 50%;
+  	background-color: #FF8008;
+  }
+
+  #page-active A {
+  	color: white;
+  }

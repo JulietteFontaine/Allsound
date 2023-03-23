@@ -1,0 +1,98 @@
+/* PAGE CONTACT */
+
+body {
+    overflow-x: hidden;
+}
+
+.contact {
+    position: absolute;
+    left: 15%;
+    top: 8%;
+    font-size: 4vw;
+    margin-block-start: 0%;
+}
+
+.contact h5 {
+    margin : 0px;
+}
+
+.contact P {
+    font-size: 3vw;
+    margin-block-end: -2px;
+    font-family: 'Roboto Mono';
+    font-weight: bold;
+}
+
+.n2 .n3 {
+    font-family: 'Bodoni Moda';
+    /* font-weight: bold; */
+}
+
+.n1 {
+    font-family: 'Bodoni Moda';
+    font-weight: bold;
+}
+
+.linkedin-icon {
+    width: 5%;
+}
+
+p:empty:before {
+    display: none;
+}
+
+/* PAGE ABOUT */
+
+.about {
+    display: grid;
+    grid-template-columns: 0.1fr 0.7fr 1.3fr;
+    grid-template-rows: 0.05fr 0.05fr 1.7fr;
+    gap: 30px 60px;
+    grid-template-areas: " . . ." ". . h1" ". image_about texte";
+}
+
+.about h1 {
+    grid-area: h1;
+    justify-self: start;
+    align-self: end;
+    margin-bottom: 0;
+    font-size: 3rem;
+    /* margin-block-start: 0; */
+}
+
+#image_about {
+    grid-area: image_about;
+    justify-self: end;
+}
+
+#image_about .wp-post-image {
+    filter: sepia(100%);
+    }
+
+#image_about  .wp-post-image:hover {
+    filter: sepia(0%);
+    }
+
+.about .texte {
+    grid-area: texte;
+    padding-right: 30%;
+}
+
+.about h2 {
+    margin-top: 0;
+}
+
+@media screen and (max-width:670px) {
+    .about {
+        display: grid;
+        grid-template-columns: 0.1fr 1.3fr;
+        grid-template-rows: 0.05fr 0.05fr 0.2fr 1.7fr;
+        gap: 30px 60px;
+        grid-template-areas: ". ." ".  h1" ". image_about " ". texte";
+    }
+    #image_about {
+        grid-area: image_about;
+        justify-self: start;
+        size: 100%
+    }
+}
